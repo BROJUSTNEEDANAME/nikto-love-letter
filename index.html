@@ -452,6 +452,27 @@ await N('它在呼吸。','glitch red',0);
 doShake();
 await W(2000);
 
+await N('衣柜。','big',0);
+await W(1500);
+await N('你要拉开它吗。','dim',0);
+D();
+await C([
+{text:'拉开',id:'a',cls:'red-ch'},
+{text:'拉开',id:'b',cls:'red-ch'},
+{text:'拉开',id:'c',cls:'red-ch'}
+]);
+clear();
+await W(800);
+await N('你伸出手。','',0);
+await W(1000);
+await N('指尖碰到柜门。','',0);
+await W(1000);
+await N('很凉。','dim',0);
+await W(1500);
+await N('你拉开了。','big red',0);
+doShake();
+await W(500);
+
 // JUMP SCARE
 step=27;prog();
 await JS([
